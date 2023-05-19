@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>王忠义的个人主页</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #ffa3a3;
+      }
+
+      /* 头部标题 */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #cfbebe;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* 导航条 */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* 导航条链接 */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* 链接颜色修改 */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* 创建两列 */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* 右侧栏 */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* 图像部分 */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* 文章卡片效果 */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* 列后面清除浮动 */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* 底部 */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>欢迎光临</h1>
+      <p><b>我的个人主页</b></p>
+    </div>
+
+    <div class="topnav">
+      <a href="#">我的Android项目</a>
+      <a href="#">我的python项目</a>
+      <a href="#">我的PCB项目</a>
+      <a href="#" style="float: right">我的照片</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>我的Android项目</h2>
+          <h5>时间：2022年12月</h5>
+          <div class="fakeimg" style="height: 200px">
+            <img src="" alt="一键拨号Java代码" ; />
+            <br />
+            <img src="" alt="一键拨号配置文件" />
+          </div>
+          <p>项目名称：一键拨号</p>
+          <p>介绍这个项目</p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个项目是我们大二时候的一个随堂项目，难度不是非常大，主要用的开发工具
+            是Java17.1，和eclipse。虽然他很简单，但是激发了我的求知欲，但凡能把项目
+            做出来，无论难易，是非常有成就感的！
+          </p>
+        </div>
+        <div class="card">
+          <h2>我的python项目</h2>
+          <h5>时间：2022年三月</h5>
+          <div class="fakeimg" style="height: 200px">图片</div>
+          <p>项目名称：短信轰炸</p>
+          <p>介绍一下这个项目</p>
+          <p>
+            这个是我根据老师指导，用python3在pycharm中做出来的项目，经过实验是可以
+            良好运行的，他能够持续不断发送信息，达到短信轰炸的效果
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>我的PCB项目</h2>
+          <div class="fakeimg" style="height: 100px">图片</div>
+          <p>项目名称：可调直流电源稳压设计</p>
+          <p>
+            这个项目要用到的有Altium
+            designer设计软件来绘制原理图和pcb板，所有的设计阶段结束后把我们的工程文件
+            发送给厂家（嘉立创：免费为大学生制版，良心企业），得到成品pcb板后，手动焊接元器件，最后交由院长验收
+          </p>
+        </div>
+        <div class="card">
+          <h3>热门文章</h3>
+          <div class="fakeimg"><p>图片</p></div>
+          <div class="fakeimg"><p>图片</p></div>
+          <div class="fakeimg"><p>图片</p></div>
+        </div>
+        <div class="card">
+          <h3>关注我</h3>
+          <p>哔哩哔哩、csdn</p>
+          <img
+            src=""
+            alt="哔哩哔哩码"
+          />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src=""
+            alt="csdn码"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>底部区域</h2>
+    </div>
+  </body>
+</html>
